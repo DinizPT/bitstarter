@@ -9,8 +9,7 @@ var mybuf;
 mybuf = fs.readFileSync('index.html');
 
 app.get('/', function(request, response) {
-  response.send('Hello World q		2iqctq!');
-  response.send(mybuf.toString());	
+  response.send('Hello World q		2iqctq!<br>' mybuf.toString());
 });
 
 var port = process.env.PORT || 5000;
